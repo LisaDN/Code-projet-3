@@ -1,18 +1,47 @@
-/* Error: Undefined variable.
- *    ,
- * 13 |     font-size: $title-font-size;
- *    |                ^^^^^^^^^^^^^^^^
- *    '
- *   sass\pages\_home.scss 13:16  @import
- *   sass\main.scss 6:9           root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 13 \2502      font-size: $title-font-size;\d\a    \2502                 ^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\pages\\_home.scss 13:16  @import\a   sass\\main.scss 6:9           root stylesheet";
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-size: 13px;
 }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+input {
+  border: none;
+  background-color: #EAEAEA;
+}
+
+input:focus {
+  outline: none;
+}
+
+header img {
+  height: 30px;
+  margin: 20px 0 10px 0;
+}
+
+.location {
+  background-color: #EAEAEA;
+  padding: 15px 0 15px 0;
+}
+
+.searchBox i {
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+/*section explorer*/
+.description h1 {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
