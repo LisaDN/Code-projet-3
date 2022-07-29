@@ -21,7 +21,6 @@ header img {
   margin: 20px 0 10px 0;
 }
 
-/*variables, mixins*/
 .location {
   background-color: #EAEAEA;
   padding: 15px 0 15px 0;
@@ -38,6 +37,9 @@ input:focus {
 
 .searchBox i {
   margin-right: 15px;
+  margin-left: 20px;
 }
+
+/*variables, mixins*/
 
 /*# sourceMappingURL=style.css.map */
