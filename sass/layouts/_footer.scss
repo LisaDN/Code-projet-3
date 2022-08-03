@@ -1,0 +1,29 @@
+footer {
+    background-color: rgb(50, 48, 48);
+    color: white;
+}
+
+footer .wrapper {
+    width: 90%;
+    text-align: start;
+    padding: 20px 0 20px 0;
+}
+
+
+
+footer li {
+    margin: 10px 0 10px 0;
+}
+
+footer ul {
+    margin-top: 20px;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+footer h3 {
+    font-family: $title-font;
+    font-weight: normal;
+}

@@ -21,7 +21,7 @@
 }
 
 .description .title {
-    padding-top: 20px;
+    padding-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -39,8 +39,9 @@
 
 .filtersSection .wrapper {
     text-align: start;
+    /*creer mixins ou class avec sectionCards wrapper*/
     width: 90%;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .filtersFlex {
