@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/style.css">
     <!--balise pour les icones-->
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -25,7 +25,7 @@
     </header>
     <div class="location">
         <div class="wrapper">
-            <form method="post" action="#" class="searchBox">
+            <form method="post" action="#" class="location__search">
                 <i class="fa-solid fa-location-dot"></i>
                 <input type="search" name="destination" value="Paris, Belleville">
             </form>
@@ -33,35 +33,34 @@
     </div>
     <section class="description">
         <div class="wrapper">
-            <p class="title">Réservez le menu qui vous convient</p>
+            <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <form method="post" action="#">
                 <button type="button" class="btn">Explorer nos restaurants</button>
             </form>
         </div>
     </section>
-    <section class="filtersSection">
+    <section class="filters">
         <div class="wrapper">
-            <h2 class="title">Fonctionnement</h2>
-            <div class="filters">
-
-                <a href="#" class="filtersFlex">
-                    <div class="number">1</div>
-                    <div class="filtersTitle">
+            <h2>Fonctionnement</h2>
+            <div>
+                <a href="#" class="filters__container">
+                    <div class="filters__container--number">1</div>
+                    <div class="filters__container--title">
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p>Choisissez un restaurant</p>
                     </div>
                 </a>
-                <a href="#" class="filtersFlex">
-                    <span class="number">2</span>
-                    <div class="filtersTitle">
+                <a href="#" class="filters__container">
+                    <span class="filters__container--number">2</span>
+                    <div class="filters__container--title">
                         <i class="fa-solid fa-list"></i>
                         <p>Composez votre menu</p>
                     </div>
                 </a>
-                <a href="#" class="filtersFlex">
-                    <span class="number">3</span>
-                    <div class="filtersTitle">
+                <a href="#" class="filters__container">
+                    <span class="filters__container--number">3</span>
+                    <div class="filters__container--title">
                         <i class="fa-solid fa-store"></i>
                         <p>Dégustez au restaurant</p>
                     </div>
@@ -77,7 +76,7 @@
         <div class="wrapper">
             <h2>Restaurants</h2>
             <div class="containerCards">
-
+                <!--carte1-->
                 <a href="#" class="cards">
                     <div class="alert">Nouveau</div>
                     <img src="asset/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -139,9 +138,6 @@
             </div>
     </section>
 
-
-
-
     <footer>
         <div class="wrapper">
             <h3>ohmyfood</h3>
@@ -153,6 +149,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
 
 </html>
