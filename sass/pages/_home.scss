@@ -3,7 +3,7 @@
     padding: 15px 0 15px 0;
 }
 
-.searchBox i {
+.location__search i {
     margin-right: 15px;
     margin-left: 20px;
 }
@@ -20,9 +20,10 @@
     padding-bottom: 35px;
 }
 
-.description .title {
+.description h1 {
     padding-top: 30px;
     margin-bottom: 10px;
+
 }
 
 .description .wrapper {
@@ -30,26 +31,21 @@
     margin: 0 auto;
 }
 
-.title {
-    font-size: $title-size;
-    font-weight: bold;
-}
 
 /*section filters*/
 
-.filtersSection .wrapper {
+.filters .wrapper {
     text-align: start;
-    /*creer mixins ou class avec sectionCards wrapper*/
     width: 90%;
     padding-top: 40px;
 }
 
-.filtersFlex {
+.filters__container {
     display: flex;
     margin-top: 20px;
 }
 
-.filtersTitle {
+.filters__container--title {
     display: flex;
     background-color: #f8f8f8;
     padding: 20px;
@@ -59,15 +55,12 @@
     box-shadow: $box-shadow;
 }
 
-.filtersTitle :nth-child(1) {
+.filters__container--title i {
+    color: grey;
     margin-right: 20px;
 }
 
-.filtersTitle i {
-    color: grey;
-}
-
-.number {
+.filters__container--number {
     background-color: $color-primary;
     border-radius: 50%;
     height: 25px;
@@ -75,12 +68,85 @@
     text-align: center;
     line-height: 25px;
     color: white;
+    transform: translateY(15px);
 }
 
-.filtersTitle {
+.filters__container--title {
     margin-left: -10px;
 }
 
-.number {
-    transform: translateY(15px);
+.cards img {
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.sectionCards {
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    height: 100%;
+    padding-bottom: 50px;
+    height: 1100px;
+}
+
+.sectionCards .wrapper {
+    text-align: start;
+    width: 90%;
+    padding-top: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 25px;
+    height: 220px;
+    padding-bottom: 10px;
+}
+
+.containerCards {
+    box-sizing: border-box;
+    height: calc(100%/4);
+}
+
+
+
+/*alignement icone coeur*/
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexRight {
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+.flexRight i {
+    font-size: 24px;
+}
+
+.contentDescription {
+    margin: 10px;
+}
+
+.alert {
+    color: #008766;
+    transform: translateY(13px);
+    position: absolute;
+    right: 15px;
+    float: right;
+    border-radius: 2px;
+    background-color: #99E2D0;
+    padding: 6px;
+    text-align: center;
+    width: 25%;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.contentDescription h3 {
+    margin-bottom: 3px;
 }
