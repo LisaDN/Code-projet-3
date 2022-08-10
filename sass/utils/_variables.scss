@@ -2,5 +2,7 @@ $title-font: 'Shrikhand', cursive;
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-gradient: linear-gradient(-10deg, $color-primary, $color-secondary);
 $title-size: 18px;
 $box-shadow: 1px 2px 5px lightgrey;
+$color-hover: lighten($color: $color-primary, $amount: 35);
