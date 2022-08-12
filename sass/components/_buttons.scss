@@ -7,4 +7,10 @@
     padding: 15px 20px 15px 20px;
     box-shadow: $box-shadow;
     cursor: pointer;
+
+    &:hover {
+        background: $color-hover;
+
+    }
+
 }

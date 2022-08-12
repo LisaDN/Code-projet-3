@@ -10,9 +10,6 @@
     }
 }
 
-
-
-
 /*section explorer*/
 
 .description {
@@ -53,6 +50,14 @@
         font-weight: bold;
         box-shadow: $box-shadow;
         margin-left: -10px;
+
+        &:hover {
+            background: $color-hover;
+
+            i {
+                color: $color-primary;
+            }
+        }
     }
 
     .filters__container--number {
@@ -153,4 +158,28 @@
     width: auto;
     margin-right: 5%;
     font-weight: bold;
+}
+
+.fa-heart {
+    &:hover {
+        background: $color-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        animation-name: text;
+        animation-duration: 2s;
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+
+            opacity: 1;
+        }
+
+    }
 }

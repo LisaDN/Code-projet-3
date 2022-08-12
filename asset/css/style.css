@@ -35,6 +35,9 @@ h2 {
   box-shadow: 1px 2px 5px lightgrey;
   cursor: pointer;
 }
+.btn:hover {
+  background: #f2eafb;
+}
 
 input {
   border: none;
@@ -130,6 +133,12 @@ header img {
   box-shadow: 1px 2px 5px lightgrey;
   margin-left: -10px;
 }
+.filters__container .filters__container--title:hover {
+  background: #f2eafb;
+}
+.filters__container .filters__container--title:hover i {
+  color: #9356DC;
+}
 .filters__container .filters__container--number {
   background-color: #9356DC;
   border-radius: 50%;
@@ -218,6 +227,24 @@ header img {
   width: auto;
   margin-right: 5%;
   font-weight: bold;
+}
+
+.fa-heart:hover {
+  background: linear-gradient(-10deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  animation-name: text;
+  animation-duration: 2s;
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .heading {
@@ -316,29 +343,72 @@ main img {
   margin-top: -30px;
 }
 
-.btn:hover {
-  background: #f2eafb;
+.cards__content {
+  opacity: 0;
+  animation: transition 2s ease-in 2s forwards;
 }
 
-.filters__container--title:hover {
-  background: #f2eafb;
-}
-.filters__container--title:hover i {
-  color: #9356DC;
+.cards1 {
+  animation-delay: 1s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
 }
 
-.fa-heart:hover {
-  background: linear-gradient(-10deg, #9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  animation-name: text;
-  animation-duration: 5s;
+.cards2 {
+  animation-delay: 2s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
 }
-@keyframes text {
+
+.cards3 {
+  animation-delay: 3s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+.cards4 {
+  animation-delay: 4s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+.cards5 {
+  animation-delay: 5s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+.cards6 {
+  animation-delay: 6s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+.cards7 {
+  animation-delay: 7s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+.cards8 {
+  animation-delay: 8s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+.cards9 {
+  animation-delay: 9s;
+  animation-name: gradual-onset;
+  animation-duration: 2s;
+}
+
+@keyframes gradual-onset {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    margin-bottom: 20px;
   }
   100% {
     opacity: 1;

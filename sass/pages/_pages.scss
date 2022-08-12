@@ -98,3 +98,80 @@ main img {
 .ftr {
     margin-top: -30px;
 }
+
+
+.cards__content {
+    opacity: 0;
+    animation: transition 2s ease-in 2s forwards;
+
+}
+
+.cards1 {
+    animation-delay: 1s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+
+}
+
+.cards2 {
+    animation-delay: 2s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards3 {
+    animation-delay: 3s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards4 {
+    animation-delay: 4s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards5 {
+    animation-delay: 5s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards6 {
+    animation-delay: 6s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards7 {
+    animation-delay: 7s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards8 {
+    animation-delay: 8s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+.cards9 {
+    animation-delay: 9s;
+    animation-name: gradual-onset;
+    animation-duration: 2s;
+}
+
+@keyframes gradual-onset {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        margin-bottom: 20px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
