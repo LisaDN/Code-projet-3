@@ -102,8 +102,8 @@ main img {
 
 .cards__content {
     opacity: 0;
-    animation: transition 2s ease-in 2s forwards;
-
+    transition: transform 2ms ease-out 2ms;
+    animation-fill-mode: forwards;
 }
 
 .cards1 {
@@ -164,11 +164,11 @@ main img {
 @keyframes gradual-onset {
     0% {
         opacity: 0;
+        transform: translateY(15px);
     }
 
     50% {
         opacity: 1;
-        margin-bottom: 20px;
     }
 
     100% {
