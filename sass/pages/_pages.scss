@@ -57,7 +57,7 @@ main img {
     color: grey;
     border-bottom: 2px solid $color-tertiary;
     /*trait vert sous texte*/
-    width: 10%;
+    max-width: 30px;
     padding-bottom: 5px;
 }
 
@@ -146,79 +146,72 @@ main img {
     transition: max-width ease-in 1s;
 }
 
-.cards--content {
-    transition: all 1s;
-}
-
-
-
-
 
 .cards__content {
     /*animation apparition*/
     opacity: 0;
-    transition: transform 2ms ease-out 2ms;
+    transition: transform 1s ease-out 2ms;
     animation-fill-mode: forwards;
 }
 
 
 
 .cards1 {
-    animation-delay: 1s;
+    animation-delay: 100ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards2 {
-    animation-delay: 2s;
+    animation-delay: 200ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards3 {
-    animation-delay: 3s;
+    animation-delay: 300ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards4 {
-    animation-delay: 4s;
+    animation-delay: 400ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards5 {
-    animation-delay: 5s;
+    animation-delay: 500ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards6 {
-    animation-delay: 6s;
+    animation-delay: 600ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards7 {
-    animation-delay: 7s;
+    animation-delay: 700ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards8 {
-    animation-delay: 8s;
+    animation-delay: 800ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards9 {
-    animation-delay: 9s;
+    animation-delay: 900ms;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
 
 .cards10 {
-    animation-delay: 10s;
+    animation-delay: 1s;
     animation-name: gradual-onset;
     animation-duration: 2s;
 }
@@ -236,16 +229,4 @@ main img {
     100% {
         opacity: 1;
     }
-}
-
-
-
-.btn--menu {
-    padding-left: 45px;
-    padding-right: 45px;
-    margin: 45px 0 70px;
-}
-
-.ftr {
-    margin-top: -30px;
 }

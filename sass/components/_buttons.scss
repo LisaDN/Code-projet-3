@@ -9,8 +9,14 @@
     cursor: pointer;
 
     &:hover {
-        background: $color-hover;
-
+        opacity: 80%;
     }
 
+}
+
+.btn--menu {
+    /*bouton menu*/
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 45px 0 70px;
 }
