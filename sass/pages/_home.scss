@@ -138,7 +138,7 @@
 }
 
 .flexRight i {
-    font-size: 24px;
+    font-size: 30px;
     color: grey
 }
 
@@ -148,17 +148,13 @@
 
 .alert {
     color: #008766;
-    transform: translateY(13px);
-    position: absolute;
-    right: 15px;
-    float: right;
     border-radius: 2px;
+    position: absolute;
     background-color: $color-tertiary;
-    padding: 6px;
-    text-align: center;
-    width: auto;
-    margin-right: 5%;
+    padding: 10px 15px 10px 15px;
     font-weight: bold;
+    align-self: flex-end;
+    margin: 10px;
 }
 
 .fa-heart {
@@ -170,6 +166,7 @@
         font-weight: bold;
         animation-name: text;
         animation-duration: 2s;
+
     }
 
     @keyframes text {
@@ -178,7 +175,6 @@
         }
 
         100% {
-
             opacity: 1;
         }
 

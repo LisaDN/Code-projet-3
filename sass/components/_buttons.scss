@@ -8,8 +8,11 @@
     box-shadow: $box-shadow;
     cursor: pointer;
 
+
     &:hover {
-        opacity: 80%;
+        background: linear-gradient(-10deg, rgba(147, 86, 220, 0.80), rgba(255, 121, 218, 0.80));
+        ;
+        transform: scale(1.2);
     }
 
 }

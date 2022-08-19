@@ -25,6 +25,7 @@ h2 {
   font-size: 20px;
 }
 
+/*loading spinner*/
 .loading__circle1 {
   border: 10px double transparent;
   width: 100px;
@@ -42,7 +43,7 @@ h2 {
 .loading {
   width: 100%;
   height: 100%;
-  background: white;
+  background-color: white;
   margin: 0;
   position: absolute;
   top: 0;
@@ -50,15 +51,22 @@ h2 {
   left: 0;
   right: 0;
   z-index: 1;
-  animation: back 1s forwards 2.5s;
+  animation-name: back;
+  display: none;
 }
 
 @keyframes back {
   0% {
-    background: white;
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 1;
   }
   100% {
-    background: transparent;
+    display: none;
+    opacity: 0;
   }
 }
 @keyframes turn {
@@ -106,7 +114,8 @@ h2 {
   cursor: pointer;
 }
 .btn:hover {
-  opacity: 80%;
+  background: linear-gradient(-10deg, rgba(147, 86, 220, 0.8), rgba(255, 121, 218, 0.8));
+  transform: scale(1.2);
 }
 
 .btn--menu {
@@ -129,36 +138,30 @@ footer {
   background-color: rgb(50, 48, 48);
   color: white;
 }
-
 footer .wrapper {
   width: 90%;
   text-align: start;
   padding: 20px 0 20px 0;
 }
-
-footer li {
-  margin: 10px 0 10px 0;
-}
-
-footer ul {
-  margin-top: 20px;
-}
-
-footer i {
-  margin-right: 10px;
-}
-
-footer h3 {
+footer .wrapper h3 {
   font-family: "Shrikhand", cursive;
   font-weight: normal;
 }
-
-footer a {
+footer .wrapper ul {
+  margin-top: 20px;
+}
+footer .wrapper ul li {
+  margin: 10px 0 10px 0;
+}
+footer .wrapper ul li a {
   color: white;
+}
+footer .wrapper ul li a i {
+  margin-right: 10px;
 }
 
 .ftr {
-  /*footer menu*/
+  /*footer menu restaurant pour enlever espace blanc entre le main et le footer */
   margin-top: -30px;
 }
 
@@ -289,7 +292,7 @@ header img {
 }
 
 .flexRight i {
-  font-size: 24px;
+  font-size: 30px;
   color: grey;
 }
 
@@ -299,17 +302,13 @@ header img {
 
 .alert {
   color: #008766;
-  transform: translateY(13px);
-  position: absolute;
-  right: 15px;
-  float: right;
   border-radius: 2px;
+  position: absolute;
   background-color: #99E2D0;
-  padding: 6px;
-  text-align: center;
-  width: auto;
-  margin-right: 5%;
+  padding: 10px 15px 10px 15px;
   font-weight: bold;
+  align-self: flex-end;
+  margin: 10px;
 }
 
 .fa-heart:hover {
@@ -543,6 +542,35 @@ main img {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wrapper {
+    max-width: 1380px;
+  }
+  .filters a {
+    display: flex;
+    justify-content: space-around;
+  }
+  .containerCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  .containerCards .cards {
+    width: calc(50% - 20px);
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  .filters__flexResponsive {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .wrapper ul {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

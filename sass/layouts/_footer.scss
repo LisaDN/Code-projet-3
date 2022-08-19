@@ -2,40 +2,37 @@ footer {
     background-color: rgb(50, 48, 48);
     color: white;
 
-}
+    .wrapper {
+        width: 90%;
+        text-align: start;
+        padding: 20px 0 20px 0;
 
-footer .wrapper {
-    width: 90%;
-    text-align: start;
-    padding: 20px 0 20px 0;
-}
+        h3 {
+            font-family: $title-font;
+            font-weight: normal;
+        }
 
+        ul {
+            margin-top: 20px;
 
+            li {
+                margin: 10px 0 10px 0;
 
-footer li {
-    margin: 10px 0 10px 0;
-}
+                a {
+                    color: white;
 
-footer ul {
-    margin-top: 20px;
-}
-
-footer i {
-    margin-right: 10px;
-}
-
-footer h3 {
-    font-family: $title-font;
-    font-weight: normal;
-}
-
-footer a {
-    color: white;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 
 .ftr {
-    /*footer menu*/
+    /*footer menu restaurant pour enlever espace blanc entre le main et le footer */
     margin-top: -30px;
 }
