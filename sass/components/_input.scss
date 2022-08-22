@@ -1,8 +1,8 @@
 input {
     border: none;
     background-color: #EAEAEA;
-}
 
-input:focus {
-    outline: none;
+    &:focus {
+        outline: none;
+    }
 }

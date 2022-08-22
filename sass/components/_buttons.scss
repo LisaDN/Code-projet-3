@@ -8,17 +8,15 @@
     box-shadow: $box-shadow;
     cursor: pointer;
 
-
     &:hover {
         background: linear-gradient(-10deg, rgba(147, 86, 220, 0.80), rgba(255, 121, 218, 0.80));
-        ;
         transform: scale(1.2);
     }
 
 }
 
+/*bouton menu restaurant*/
 .btn--menu {
-    /*bouton menu*/
     padding-left: 45px;
     padding-right: 45px;
     margin: 45px 0 70px;

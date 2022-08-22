@@ -15,6 +15,11 @@ footer {
         ul {
             margin-top: 20px;
 
+            @media screen and (min-width:992px) {
+                display: flex;
+                justify-content: space-between;
+            }
+
             li {
                 margin: 10px 0 10px 0;
 
@@ -28,11 +33,4 @@ footer {
             }
         }
     }
-}
-
-
-
-.ftr {
-    /*footer menu restaurant pour enlever espace blanc entre le main et le footer */
-    margin-top: -30px;
 }
