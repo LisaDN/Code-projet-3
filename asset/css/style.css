@@ -305,8 +305,9 @@ header img {
   margin-top: 15px;
   margin-right: 25px;
 }
-.flexRight i {
-  font-size: 30px;
+
+i {
+  font-size: 25px;
   color: grey;
 }
 
